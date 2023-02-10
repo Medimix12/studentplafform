@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student Platform</title>
+  <style>
+    /* Add some styles for the website */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .navigation a {
+      color: #333;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .form {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="password"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .form input[type="submit"] {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .notes {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .notes h2 {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .notes p {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Student Platform</h1>
+  </div>
+  <div class="navigation">
+    <a href="#">Home</a>
+    <a href="#">Class Notes</a>
+    <a href="#">Create Campaign</a>
+  </div>
+  <div class="container">
+    <!-- Registration form -->
+    <div class="form">
+      <h2>Registration</h2>
+      <form action="register.php" method="post">
+        <input type="text" name="username" placeholder="Username">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Register">
+      </form>
+    </div>
+    <!-- Upload class notes form -->
+    <div class="notes">
+      <h2>Upload Class Notes</h2>
+      <form action="upload_
